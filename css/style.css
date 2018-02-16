@@ -46,7 +46,7 @@ body, p, #main-menu li a {
 }
 
 /* line 13, ../scss/utilities/_mixin-font-size.scss */
-.social-links li a:before {
+.social-links .content li a:before {
   font-size: 18px;
 }
 
@@ -293,13 +293,13 @@ h2.block-title {
 .social-links {
   padding: 30px 0px 30px 0px;
 }
-/* line 3, ../scss/components/_social.scss */
-.social-links li {
+/* line 4, ../scss/components/_social.scss */
+.social-links .content li {
   display: inline-block;
   max-width: 30px;
 }
-/* line 6, ../scss/components/_social.scss */
-.social-links li a {
+/* line 7, ../scss/components/_social.scss */
+.social-links .content li a {
   display: block;
   color: #5fc0c3;
   padding-right: 10px;

@@ -1,17 +1,19 @@
 .social-links {
 	padding: 30px 0px 30px 0px;
-	li {
-		display: inline-block;
-		max-width: 30px;
-		a{
-			display: block;
-			color: $green_02;
-			padding-right: 10px;
-    		padding-left: 10px;
-			font-size: 0px;
-			&:before {
-				@extend %font-size-upper;
-			}
-		}	
+	.content {
+		li {
+			display: inline-block;
+			max-width: 30px;
+			a{
+				display: block;
+				color: $green_02;
+				padding-right: 10px;
+	    		padding-left: 10px;
+				font-size: 0px;
+				&:before {
+					@extend %font-size-upper;
+				}
+			}	
+		}
 	}
 }
