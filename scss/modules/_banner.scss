@@ -1,0 +1,72 @@
+.front-banner {
+	min-height: 458px;
+	max-height: 458px;
+	overflow: hidden;
+	position: relative;
+	@extend .text-center;
+
+	.banner-content {
+		position: absolute;
+		left: 50%;
+		@include breakpoint(tablet) {
+			top: 82px;
+			max-width: 830px;
+			margin-left: -415px;
+		}
+		@include breakpoint(mobileonly) {
+			top: 40px;
+			max-width: 90%;
+			margin-left: -45%;
+		}
+	}
+
+	img {
+		height: 100vh;
+		object-fit: cover;
+	}
+
+	.view-title {
+		@extend %font-size-largest;
+		padding-bottom: 25px;
+		font-weight: 300;
+		color: $white;
+		font-family: $museosans-300;
+		
+		@include breakpoint(mobileonly) {
+			font-size: 28px;
+		}
+	}
+
+	.view-secondary_heading {
+		@extend %font-size-mid;
+		padding-bottom: 23px;
+		font-family: $museosans-500;
+		max-width: 610px;
+		margin: 0 auto;
+		color: $white;
+
+		@include breakpoint(tablet) {
+			line-height: 33px;
+		}
+
+		@include breakpoint(mobileonly) {
+			font-size: 17px;
+		}
+	}
+
+	.view-body {
+		padding-bottom: 28px;
+		max-width: 600px;
+		margin: 0 auto;
+		color: $white;
+
+		@include breakpoint(tablet) {
+			line-height: 23px;
+		}
+	}
+
+	.view-last_heading {
+		@extend %font-size-mid;
+		color: $white;
+	}
+}

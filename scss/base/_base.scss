@@ -1,0 +1,60 @@
+html, body {
+	overflow-x: hidden;
+}
+
+* {
+   @extend %box-sizing;
+   outline: none;
+}
+
+body {
+	@extend %OpenSans-Regular;
+	@extend %font-size-base;
+
+	@include breakpoint(mobileonly) { 
+		line-height: 1.3;
+	}
+}
+
+p {
+	@extend %font-size-base;
+	@extend %OpenSans-Regular;
+	color: $dark-gray_02;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.clearfix {
+	&:before,
+	&:after {
+	   	display: block;
+	    clear: both;
+	    content: '';
+	}
+}
+
+hr {
+	border-color: $light-gray-03;
+	margin: 0px;
+}
+
+div {
+	&.messages {
+	    margin: 10px 15px;
+	}
+}
+
+a { 
+	text-decoration: none;
+	color: $green_01;
+
+	&:hover { 
+		color: $green_01; 
+	}
+}

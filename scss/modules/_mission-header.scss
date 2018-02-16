@@ -1,0 +1,23 @@
+.view-our-mission-header {
+	.view-content {
+		@extend .container;
+		.views-row {
+			width: 100%;
+		}
+		.view-title {
+			color: $dark-gray_02;
+		}
+		.view-body {
+			padding: 0px 0px 28px 0px;
+		}
+		.view-last_heading {
+			color: $dark-gray_02;
+			@extend %font-size-mid;
+		}
+		
+	}
+}
+
+.field-name-field-top-heading {
+	@extend %font-size-large;
+}

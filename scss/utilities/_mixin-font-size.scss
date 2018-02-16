@@ -1,0 +1,23 @@
+@mixin font-size($size: 14px) {
+	font-size: $size;
+}
+
+%font-size-base {
+	@include font-size;
+}
+
+%font-size-mid {
+	@include font-size(17px);
+}
+
+%font-size-upper {
+	@include font-size(18px);
+}
+
+%font-size-large {
+	@include font-size(26px);
+}
+
+%font-size-largest {
+	@include font-size(55px);
+}

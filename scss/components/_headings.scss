@@ -1,0 +1,50 @@
+h1, h3, h3, h4, h5  {
+	font-family: $museosans-500;
+}
+
+h1 {
+	padding: 15px 0px;
+}
+
+h2 {
+	&.block-title {
+		padding: 34px 0px 44px 0px;
+		font-family: $museosans-500;
+		color: $dark-gray_01;
+		line-height: 1;
+		text-transform: uppercase;
+		@extend %font-size-large;
+	}
+}
+
+.heading-text-center {
+	h2 {
+		&.block-title {
+			@extend .text-center;
+		}
+	}
+}
+
+.blog-block {
+	h2 {
+		&.block-title {
+			padding-bottom: 30px;
+		}
+	}
+}
+
+.our-members-block {
+	h2 {
+		&.block-title {
+			padding-bottom: 25px;
+		}
+	}
+}
+
+.view-our-mission-header {
+	h2 {
+		&.block-title {
+			padding-bottom: 33px;
+		}
+	}
+}

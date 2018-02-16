@@ -1,0 +1,47 @@
+.view-get-involved {
+	@extend .text-center;
+	padding-bottom: 18px;
+	@extend .container;
+	.view-content {
+		width: 100%;
+		float: left;
+		.views-row {
+			&.views-row-2 {
+				.view-body {
+					max-width: 232px;
+				}
+			}
+			&.views-row-3 {
+				.view-body {
+					max-width: 295px;
+				}
+			}
+		}
+	}
+	.view-image {
+		height: 144px;
+		img {
+			max-width: 128px;
+			height: auto;
+		}
+	}
+	.view-title {
+		@extend %font-size-mid;
+		text-transform: uppercase;
+		font-family: $museosans-500;
+		padding: 0px 0px 17px 0px;
+	}
+	.view-body {
+		line-height: 24px;
+		margin: 0 auto;
+	}
+	.view-link {
+		a {
+			display: inline-block;
+		}
+	}
+}
+
+.field-name-field-top-heading {
+	@extend %font-size-large;
+}

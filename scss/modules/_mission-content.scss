@@ -1,0 +1,64 @@
+.view-our-mission {
+	padding: 100px 0px 45px 0px;
+	border-bottom: solid 1px $light-gray-04;
+	margin-bottom: 13px;
+	position: relative;
+	float: left;
+	width: 100%;
+	&:after{
+		content: "";
+	    height: 2px;
+	    bottom: -2px;
+	    width: 100%;
+	    background: $light-gray-04;
+	    display: block;
+	    position: absolute;
+	}
+	.view-content {
+		float: left;
+		width: 100%;
+		.views-row {
+			@include breakpoint(mobileonly) {
+				margin-bottom: 65px;
+				margin-left: 30px;
+				&:last-child{
+					margin-bottom: 0px;
+				}
+			}
+		}
+		.block-inner-white {
+			background-color: $white;
+			min-height: 173px;
+			padding: 55px 15px 20px 15px;
+			position: relative;
+			@include border-radius;
+			.view-image {
+				position: absolute;
+				top: -50px;
+				left: 50%;
+				margin-left: -50px;
+				border: solid 10px $white;
+				@include border-radius(50%);
+				.field {
+					@include border-radius(50%);
+					padding: 17px 15px 13px 15px;
+					background-color: $green_04;
+					width: 80px;
+					height: 80px;
+					img {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+	.view-title {
+		color: $green_03;
+		padding: 0px 0px 14px 0px;
+		font-family: $museosans-500;
+		@extend %font-size-mid;
+	}
+	.view-body {
+		line-height: 1.5;
+	}
+}

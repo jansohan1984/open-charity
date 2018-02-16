@@ -1,0 +1,31 @@
+.btn {
+	a {
+		@extend .text-center;
+		text-transform: uppercase;
+		display: block;
+		max-width: 209px;
+		width: 100%;
+		margin: 20px;
+		border: solid 2px $green_01;
+		line-height: 38px;
+		color: $green_01;
+		background-color: $white;
+		font-family: $museosans-500;
+		&:hover {
+			background-color: $green_01;
+			color: $white;
+		}
+	}
+}
+
+.btn-box {
+	a {
+		@extend .btn;
+		background-color: $green_01;
+		color: $white;
+		&:hover {
+			background-color: $white;
+			color: $green_01;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.view-display-id-blog_listing {
+	margin: 0 15px;
+	.blog-title {
+		padding: 0px 0px 10px 0px;
+		margin-bottom: 15px;
+		border-bottom: $light-gray_01 solid 1px;
+		line-height: 1;
+		a {
+			color: $green_01;
+			@extend %OpenSans-Semibold;
+		}
+	}
+	.blog-body {
+		padding: 0px 0px 25px 0px;
+		margin-bottom: 15px;
+		border-bottom: $light-gray_01 solid 1px;
+		line-height: 1.7;
+	}
+	.blog-date {
+		color: $dark-gray_02;
+	}
+}
+
+.slick-dots button {
+	font-size: 0px;
+}

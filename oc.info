@@ -1,0 +1,60 @@
+name = Open Charity
+description = Custom theme for Open Charity
+core = 7.x
+engine = phptemplate
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[header] = Header
+regions[banner_area] = Banner Area
+regions[content_top] = Content Top
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[content] = Content
+regions[content_bottom] = Content Bottom
+regions[content_last] = Content Last
+regions[footer_upper] = Footer Upper
+regions[footer] = Footer
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Features
+;;;;;;;;;;;;;;;;;;;;;
+
+features[] = logo 
+features[] = name 
+features[] = slogan 
+features[] = node_user_picture 
+features[] = comment_user_picture 
+features[] = comment_user_verification 
+features[] = favicon 
+features[] = main_menu 
+features[] = secondary_menu 
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Settings
+;;;;;;;;;;;;;;;;;;;;;
+
+settings[toggle_logo] = 1
+settings[toggle_name] = 1
+settings[toggle_slogan] = 1
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_main_menu] = 1
+settings[toggle_secondary_menu] = 1
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/slick.min.js
+scripts[] = js/oc.js

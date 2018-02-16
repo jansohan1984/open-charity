@@ -1,0 +1,15 @@
+input,
+textarea,
+select {
+  @extend %OpenSans-Regular;
+}
+
+input {
+	&[type=text] { 
+		border: 1px solid $light-gray_01; 
+	}
+}
+
+textarea {
+	border: 1px solid $light-gray_01;
+}

@@ -1,0 +1,57 @@
+@mixin font-weight($weight: normal) {
+	font-weight: $weight;
+}
+
+@mixin border-radius($radius: 5px) {
+	border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+@mixin flex-box {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
+}
+
+@mixin transform {
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}  
+
+@mixin transform-translate3d {
+  -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+} 
+
+@mixin user-select {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+     -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 1024px) { @content ; }
+  }
+  @else if $point == tablet {
+     @media (min-width: 768px) { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 767px)  { @content ; }
+
+  }
+}

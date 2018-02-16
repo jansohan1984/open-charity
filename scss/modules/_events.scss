@@ -1,0 +1,40 @@
+.view-display-id-events {
+	@include breakpoint(tablet) {
+		.view-content {
+			float: left;
+		}
+	}
+	.event-date {
+		@extend %font-size-mid;
+		color: $dark-gray_01;
+		padding-bottom: 12px;
+		font-family: $museosans-500;
+		.event-label {
+			color: $green_01;
+			padding-right: 3px;
+			@include breakpoint(mobileonly) {
+				display: block;
+			}
+		}
+	}
+	.event-title {
+		color: $dark-gray_02;
+	}
+	.view-footer {
+		@include breakpoint(tablet) {
+			float: right;
+			padding: 3px 3px 0px 0px;
+		}
+		@include breakpoint(mobileonly) {
+			padding-top: 15px;
+		}
+		a {
+			margin: 0px;
+			padding: 0px 18px;
+			width: 105px;
+			@include breakpoint(mobileonly) {
+				margin: 0px auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+#main-menu {
+	li {
+		display: inline-block;
+
+		@include breakpoint(mobileonly) {
+			display: block;
+			text-align: left;
+			padding: 10px 0px;
+		}
+
+		a {
+    		font-family: $museosans-500;
+    		@extend %font-size-base;
+    		
+    		&:not(.join-us) {
+				display: block;
+				text-transform: uppercase;
+				color: $dark-gray_01;
+			}
+
+    		@include breakpoint(tablet) {
+    			padding-left: 30px;
+
+    			&:not(.join-us) {
+    				line-height: 3;
+     			}
+			}
+
+			&.join-us {
+				width: 110px;
+				padding: 0px 24px;
+
+				@include breakpoint(tablet) {
+					margin: 0px 0px 0px 30px;
+				}
+
+				@include breakpoint(mobileonly) {
+					margin: 0px;
+				}
+			}
+		}
+	}	
+}

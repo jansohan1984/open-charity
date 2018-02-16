@@ -1,0 +1,99 @@
+@import url('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+
+$open_sans: "Open Sans", sans-serif;
+$opensans_condensed: "Open Sans Condensed", sans-serif;
+$museosans-300: "Museosans_300", sans-serif;
+$museosans-500: "Museosans_500", sans-serif;
+$museosans-700: "Museosans_700", sans-serif;
+$fontAwesome: FontAwesome;
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {
+	@font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    @if $asset-pipeline == true {
+      src: font-url('#{$file-path}.eot');
+      src: font-url('#{$file-path}.eot?#iefix')          format('embedded-opentype'),
+           font-url('#{$file-path}.woff')                format('woff'),
+           font-url('#{$file-path}.ttf')                 format('truetype'),
+           font-url('#{$file-path}.svg##{$font-family}') format('svg');
+    } @else {
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix')               format('embedded-opentype'),
+           url('#{$file-path}.woff')                     format('woff'),
+           url('#{$file-path}.ttf')                      format('truetype'),
+           url('#{$file-path}.svg##{$font-family}')      format('svg');
+    }
+  }
+}
+
+@mixin opensanscondensed($weight: 300) {
+	font-family: $opensans_condensed;
+	font-weight: $weight;
+}
+
+@mixin opensans($weight: 300) {
+	font-family: $open_sans;
+	font-weight: $weight;
+}
+
+@include font-face(Museosans_300, '../fonts/museosans/museosans_300');
+@include font-face(Museosans_500, '../fonts/museosans/museosans_500');
+@include font-face(Museosans_700, '../fonts/museosans/museosans_700');
+
+%OpenSans-Light {
+	@include opensans;
+}
+
+%OpenSans-LightItalic {
+	@include opensans(300i);
+}
+
+%OpenSans-Regular {
+	@include opensans(400);
+}
+
+%OpenSans-Italic {
+	@extend %OpenSans-Regular;
+	font-style: italic;
+}
+
+%OpenSans-Semibold {
+	@include opensans(600);
+}
+
+%OpenSans-SemiboldItalic {
+	@include opensans(600i);
+}
+
+%OpenSans-Bold {
+	@include opensans(700);
+}
+
+%OpenSans-BoldItalic {
+	@include opensans(700i);
+}
+
+%OpenSans-ExtraBold {
+	@include opensans(800);
+}
+
+%OpenSans-ExtraBoldItalic {
+	@include opensans(800i);
+}
+
+// opensans_condensed
+%OpenSans-CondLight {
+	@include opensanscondensed;
+}
+
+%OpenSans-CondLightItalic {
+	@include opensanscondensed(300i);
+}
+
+%OpenSans-CondBold {
+	@include opensanscondensed(700);
+}
